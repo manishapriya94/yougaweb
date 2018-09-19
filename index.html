@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    background-color: #a6351f;
+    background-image: linear-gradient(to right, #a6351f, ffbd4a);
+
+}
+li{
+	display: inline;
+    float: right;
+
+}
+li a{
+	display: inline-block;
+    color: white;
+    text-align: center;
+	text-decoration: none;
+	padding: 8px;
+    padding: 14px 16px;
+
+}
+li a:hover {
+	border-bottom:3px solid #ffbd4a;
+}
+.active {
+    font-color: #ffbd4a;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-connect {
+    display: none;
+    position: absolute;
+    background-color: #ffbd4a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-connect a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    border: 1px solid white;
+    text-align: left;
+}
+
+.dropdown-connect a:hover {
+	background-color: #ffffff;
+    color: #ffbd4a;
+}
+
+.dropdown:hover .dropdown-connect {
+    display: block;
+}
+</style>
+<body>
+
+<ul>
+  <li><a href="#about">Vision</a></li>
+  <li><a href="#mandalas">Our Mandalas</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Connect with Us</a>
+    <div class="dropdown-connect">
+      <a href="#">Book Us</a>
+      <a href="#">FAQ</a>
+      <a href="#">Blog</a>
+      <a href="#">Banyan Buddies</a>
+    </div>
+  <li><a href="#apply">Apply</a></li>
+</ul>
+
+
+
+</body>
+</html>
